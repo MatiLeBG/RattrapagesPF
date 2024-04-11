@@ -1,0 +1,118 @@
+# dune utop
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /home/lbolbene/Repositories/2023-N7-S7/PF/TP/TP7/src
+# Auto-detected concurrency: 4
+$ /applications/opam-4.11.0/4.11.0/bin/ocamlc.opt -config > /tmp/dune_d4ac42_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Release
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; ocaml_bin = External "/applications/opam-4.11.0/4.11.0/bin"
+#  ; ocaml = Ok External "/applications/opam-4.11.0/4.11.0/bin/ocaml"
+#  ; ocamlc = External "/applications/opam-4.11.0/4.11.0/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/applications/opam-4.11.0/4.11.0/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/applications/opam-4.11.0/4.11.0/bin/ocamldep.opt"
+#  ; ocamlmklib =
+#      Ok External "/applications/opam-4.11.0/4.11.0/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/applications/opam-4.11.0/4.11.0/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/applications/opam-4.11.0/4.11.0/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" :
+#            "/home/lbolbene/Repositories/2023-N7-S7/PF/TP/TP7/src"
+#        ; "INSIDE_DUNE" :
+#            "/home/lbolbene/Repositories/2023-N7-S7/PF/TP/TP7/src/_build/default"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/home/lbolbene/Repositories/2023-N7-S7/PF/TP/TP7/src/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/home/lbolbene/Repositories/2023-N7-S7/PF/TP/TP7/src/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/home/lbolbene/Repositories/2023-N7-S7/PF/TP/TP7/src/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths = [ External "/applications/opam-4.11.0/4.11.0/lib" ]
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.11.0"
+#      ; standard_library_default =
+#          "/applications/opam-4.11.0/4.11.0/lib/ocaml"
+#      ; standard_library = "/applications/opam-4.11.0/4.11.0/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-fPIC" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-fPIC" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-ldl"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; native_c_libraries = [ "-lm"; "-ldl" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "linux"
+#      ; asm = [ "as" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-pc-linux-gnu"
+#      ; target = "x86_64-pc-linux-gnu"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X028"
+#      ; cmi_magic_number = "Caml1999I028"
+#      ; cmo_magic_number = "Caml1999O028"
+#      ; cma_magic_number = "Caml1999A028"
+#      ; cmx_magic_number = "Caml1999Y028"
+#      ; cmxa_magic_number = "Caml1999Z028"
+#      ; ast_impl_magic_number = "Caml1999M028"
+#      ; ast_intf_magic_number = "Caml1999N028"
+#      ; cmxs_magic_number = "Caml1999D028"
+#      ; cmt_magic_number = "Caml1999T028"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="disabled"' --cookie 'library-name="tp7_etu"' -o tp7_etu.pp.ml --impl tp7_etu.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /applications/opam-4.11.0/4.11.0/bin/ocamlc.opt -w -40 -g -bin-annot -I .tp7_etu.objs/byte -I /applications/opam-4.11.0/4.11.0/lib/base -I /applications/opam-4.11.0/4.11.0/lib/base/base_internalhash_types -I /applications/opam-4.11.0/4.11.0/lib/base/caml -I /applications/opam-4.11.0/4.11.0/lib/base/shadow_stdlib -I /applications/opam-4.11.0/4.11.0/lib/graphics -I /applications/opam-4.11.0/4.11.0/lib/jane-street-headers -I /applications/opam-4.11.0/4.11.0/lib/ppx_compare/runtime-lib -I /applications/opam-4.11.0/4.11.0/lib/ppx_enumerate/runtime-lib -I /applications/opam-4.11.0/4.11.0/lib/ppx_hash/runtime-lib -I /applications/opam-4.11.0/4.11.0/lib/ppx_inline_test/config -I /applications/opam-4.11.0/4.11.0/lib/ppx_inline_test/runtime-lib -I /applications/opam-4.11.0/4.11.0/lib/ppx_sexp_conv/runtime-lib -I /applications/opam-4.11.0/4.11.0/lib/sexplib0 -I /applications/opam-4.11.0/4.11.0/lib/time_now -no-alias-deps -o .tp7_etu.objs/byte/tp7_etu.cmo -c -impl tp7_etu.pp.ml)
+$ (cd _build/default && /applications/opam-4.11.0/4.11.0/bin/ocamlc.opt -w -40 -g -a -o tp7_etu.cma .tp7_etu.objs/byte/tp7_etu.cmo)
+$ (cd _build/default && /applications/opam-4.11.0/4.11.0/bin/ocamlc.opt -w -40 -w -24 -g -bin-annot -I .utop/.utop.eobjs/byte -I /applications/opam-4.11.0/4.11.0/lib/base -I /applications/opam-4.11.0/4.11.0/lib/base/base_internalhash_types -I /applications/opam-4.11.0/4.11.0/lib/base/caml -I /applications/opam-4.11.0/4.11.0/lib/base/shadow_stdlib -I /applications/opam-4.11.0/4.11.0/lib/findlib -I /applications/opam-4.11.0/4.11.0/lib/graphics -I /applications/opam-4.11.0/4.11.0/lib/jane-street-headers -I /applications/opam-4.11.0/4.11.0/lib/lambda-term -I /applications/opam-4.11.0/4.11.0/lib/logs -I /applications/opam-4.11.0/4.11.0/lib/lwt -I /applications/opam-4.11.0/4.11.0/lib/lwt/unix -I /applications/opam-4.11.0/4.11.0/lib/lwt_react -I /applications/opam-4.11.0/4.11.0/lib/mew -I /applications/opam-4.11.0/4.11.0/lib/mew_vi -I /applications/opam-4.11.0/4.11.0/lib/ocaml/compiler-libs -I /applications/opam-4.11.0/4.11.0/lib/ocaml/threads -I /applications/opam-4.11.0/4.11.0/lib/ocplib-endian -I /applications/opam-4.11.0/4.11.0/lib/ocplib-endian/bigstring -I /applications/opam-4.11.0/4.11.0/lib/ppx_compare/runtime-lib -I /applications/opam-4.11.0/4.11.0/lib/ppx_enumerate/runtime-lib -I /applications/opam-4.11.0/4.11.0/lib/ppx_hash/runtime-lib -I /applications/opam-4.11.0/4.11.0/lib/ppx_inline_test/config -I /applications/opam-4.11.0/4.11.0/lib/ppx_inline_test/runtime-lib -I /applications/opam-4.11.0/4.11.0/lib/ppx_sexp_conv/runtime-lib -I /applications/opam-4.11.0/4.11.0/lib/react -I /applications/opam-4.11.0/4.11.0/lib/result -I /applications/opam-4.11.0/4.11.0/lib/sexplib0 -I /applications/opam-4.11.0/4.11.0/lib/time_now -I /applications/opam-4.11.0/4.11.0/lib/trie -I /applications/opam-4.11.0/4.11.0/lib/uchar -I /applications/opam-4.11.0/4.11.0/lib/utop -I /applications/opam-4.11.0/4.11.0/lib/uucp -I /applications/opam-4.11.0/4.11.0/lib/uuseg -I /applications/opam-4.11.0/4.11.0/lib/uutf -I /applications/opam-4.11.0/4.11.0/lib/xdg -I /applications/opam-4.11.0/4.11.0/lib/zed -I .tp7_etu.objs/byte -no-alias-deps -o .utop/.utop.eobjs/byte/dune__exe__Utop.cmo -c -impl .utop/utop.ml-gen)
+$ (cd _build/default && /applications/opam-4.11.0/4.11.0/bin/ocamlc.opt -w -40 -w -24 -g -o .utop/utop.exe -output-complete-exe /applications/opam-4.11.0/4.11.0/lib/ocaml/compiler-libs/ocamlcommon.cma /applications/opam-4.11.0/4.11.0/lib/ocaml/compiler-libs/ocamlbytecomp.cma /applications/opam-4.11.0/4.11.0/lib/ocaml/compiler-libs/ocamltoplevel.cma /applications/opam-4.11.0/4.11.0/lib/findlib/findlib.cma /applications/opam-4.11.0/4.11.0/lib/findlib/findlib_top.cma /applications/opam-4.11.0/4.11.0/lib/logs/logs.cma -I /applications/opam-4.11.0/4.11.0/lib/ocaml /applications/opam-4.11.0/4.11.0/lib/lwt/lwt.cma /applications/opam-4.11.0/4.11.0/lib/logs/logs_lwt.cma /applications/opam-4.11.0/4.11.0/lib/ocaml/unix.cma -I /applications/opam-4.11.0/4.11.0/lib/ocaml /applications/opam-4.11.0/4.11.0/lib/ocaml/bigarray.cma -I /applications/opam-4.11.0/4.11.0/lib/ocaml /applications/opam-4.11.0/4.11.0/lib/ocplib-endian/ocplib_endian.cma /applications/opam-4.11.0/4.11.0/lib/ocplib-endian/bigstring/ocplib_endian_bigstring.cma /applications/opam-4.11.0/4.11.0/lib/ocaml/threads/threads.cma -I /applications/opam-4.11.0/4.11.0/lib/ocaml /applications/opam-4.11.0/4.11.0/lib/lwt/unix/lwt_unix.cma -I /applications/opam-4.11.0/4.11.0/lib/lwt/unix /applications/opam-4.11.0/4.11.0/lib/react/react.cma /applications/opam-4.11.0/4.11.0/lib/lwt_react/lwt_react.cma /applications/opam-4.11.0/4.11.0/lib/result/result.cma /applications/opam-4.11.0/4.11.0/lib/uutf/uutf.cma /applications/opam-4.11.0/4.11.0/lib/uucp/uucp.cma /applications/opam-4.11.0/4.11.0/lib/uuseg/uuseg.cma /applications/opam-4.11.0/4.11.0/lib/zed/zed.cma /applications/opam-4.11.0/4.11.0/lib/trie/trie.cma /applications/opam-4.11.0/4.11.0/lib/mew/mew.cma /applications/opam-4.11.0/4.11.0/lib/mew_vi/mew_vi.cma /applications/opam-4.11.0/4.11.0/lib/lambda-term/lambda_term.cma -I /applications/opam-4.11.0/4.11.0/lib/lambda-term /applications/opam-4.11.0/4.11.0/lib/xdg/xdg.cma -I /applications/opam-4.11.0/4.11.0/lib/xdg /applications/opam-4.11.0/4.11.0/lib/utop/uTop.cma /applications/opam-4.11.0/4.11.0/lib/graphics/graphics.cma -I /applications/opam-4.11.0/4.11.0/lib/graphics /applications/opam-4.11.0/4.11.0/lib/ppx_inline_test/config/inline_test_config.cma /applications/opam-4.11.0/4.11.0/lib/base/base_internalhash_types/base_internalhash_types.cma -I /applications/opam-4.11.0/4.11.0/lib/base/base_internalhash_types /applications/opam-4.11.0/4.11.0/lib/base/caml/caml.cma /applications/opam-4.11.0/4.11.0/lib/sexplib0/sexplib0.cma /applications/opam-4.11.0/4.11.0/lib/base/shadow_stdlib/shadow_stdlib.cma /applications/opam-4.11.0/4.11.0/lib/base/base.cma -I /applications/opam-4.11.0/4.11.0/lib/base /applications/opam-4.11.0/4.11.0/lib/jane-street-headers/jane_street_headers.cma /applications/opam-4.11.0/4.11.0/lib/ppx_sexp_conv/runtime-lib/ppx_sexp_conv_lib.cma /applications/opam-4.11.0/4.11.0/lib/ppx_compare/runtime-lib/ppx_compare_lib.cma /applications/opam-4.11.0/4.11.0/lib/ppx_enumerate/runtime-lib/ppx_enumerate_lib.cma /applications/opam-4.11.0/4.11.0/lib/ppx_hash/runtime-lib/ppx_hash_lib.cma /applications/opam-4.11.0/4.11.0/lib/time_now/time_now.cma -I /applications/opam-4.11.0/4.11.0/lib/time_now /applications/opam-4.11.0/4.11.0/lib/ppx_inline_test/runtime-lib/ppx_inline_test_lib.cma tp7_etu.cma .utop/.utop.eobjs/byte/dune__exe__Utop.cmo -linkall -warn-error -31)
