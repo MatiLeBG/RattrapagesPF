@@ -5,9 +5,11 @@ type t = digit list
 let zero = []
 let is_zero t = t = []
 
+let un = [One]
+let deux = [Zero ; One]
 let sept = [One; One; One]
 let huit = [Zero; Zero; Zero; One]
-
+let quinze = [One; One; One; One]
 let vingt_cinq = [One; Zero; Zero; One; One]
 let vingt_six = [Zero; One; Zero; One; One]
 
@@ -20,7 +22,7 @@ let rec inc =
               else
                 Zero::(inc q) 
 
-let%test _ = inc [] = [One]
+let%test _ = inc zero = un
 let%test _ = inc sept = huit
 let%test _ = inc vingt_cinq = vingt_six
 
@@ -51,8 +53,8 @@ fun n ->
             else
               2 * (to_int q)
 
-let%test _ = to_int [] = 0
-let%test _ = to_int [One] = 1
+let%test _ = to_int zero = 0
+let%test _ = to_int un = 1
 let%test _ = to_int sept = 7
 let%test _ = to_int huit = 8
 let%test _ = to_int vingt_cinq = 25
@@ -61,10 +63,20 @@ let%test _ = to_int vingt_six = 26
 
 
 let rec add n1 n2 =
-  (* ---------- EXERCICE ---------- *)
-(* DEBUT REPONSE *)
-failwith "TODO"
-(* FIN REPONSE *)
+match n1, n2 with
+| ([],_) -> n2
+| (_,[]) -> n1
+| ([One], _) -> inc n2
+| (_,[One]) -> inc n1
+| (t1::q1, t2::q2) -> match t1, t2 with
+                      | (Zero, Zero) -> Zero::(add q1 q2)
+                      | (One, One) -> Zero::(inc (add q1 q2))
+                      | _ -> One::(add q1 q2)
+            
+let%test _ = add zero zero = zero
+let%test _ = add zero un = un
+let%test _ = add un un = deux
+let%test _ = add sept huit = quinze
 
 (*
 
